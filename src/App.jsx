@@ -6,21 +6,14 @@ import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
-    <div>
-      {/* 고정적으로 출력하고 싶은 부분이 있다면 아래와 같이 추가 */}
-      <h1>Hello Router!</h1>
-
-      {/* 아래 부분은 url에 따라 route가 결정된다. */}
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="product" element={<Product />} />
-          <Route path="pricing" element={<Pricing />} />
-          {/* 와일드키(*)를 사용하면 위 케이스 외 모든 경로를 의미 */}
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="product" element={<Product />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
