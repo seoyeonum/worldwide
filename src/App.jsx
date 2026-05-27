@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Product from './pages/Product';
 import Pricing from './pages/Pricing';
 import Homepage from './pages/Homepage';
+import AppLayout from './pages/AppLayout';
 import PageNotFound from './pages/PageNotFound';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="product" element={<Product />} />
         <Route path="pricing" element={<Pricing />} />
+        <Route path="app" element={<AppLayout />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
@@ -38,3 +40,7 @@ export default App;
 
 // ※ router 패키지 설치
 // npm i react-router-dom
+
+// ※ CSS Modules
+// CSS 모듈은 create-react-app이나 vite 안에 이미 포함되어 있기에
+// 별도의 패키지 설치가 필요하지 않다.
