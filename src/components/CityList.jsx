@@ -20,14 +20,3 @@ function CityList({ cities, isLoading }) {
 }
 
 export default CityList;
-
-//////////////////////////////
-
-// ※ Fake server 구축을 위해,
-
-// - npm i json-server
-
-// - package.json script에 아래 문구 추가
-// "server": "json-server --watch data/cities.json --port 8000 --delay 500"
-
-// - npm run server
