@@ -10,7 +10,7 @@
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
@@ -22,7 +22,7 @@
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -34,7 +34,20 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "cityName": "Seongnam-si",
+      "country": "Korea (the Republic of)",
+      "emoji": "🇰🇷",
+      "date": "2026-06-16T13:57:25.184Z",
+      "notes": "TEST",
+      "position": {
+        "lat": "37.4188759693434",
+        "lng": "127.09212142339062"
+      },
+      "id": "Gt3NrjQc9Co"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
