@@ -79,3 +79,8 @@ export default App;
 // www.example.com/app/cities/lisbon?lat=38.728&lng=-9.141
 // - params: lisbon
 // - query string: lat=38.728&lng=-9.141
+
+// ※ 3 steps of user Authentication
+// 1. 로그인에 사용된 id, pw를 가져와 지정된 사용자의 비밀번호가 올바른 정보인지 API 엔드 포인트를 통해 확인
+// 2. 자격 증명이 실제로 올바른 경우, 기본 애플리케이션으로 리디렉션하고 사용자 개체를 상태(state)에 저장
+// 2. 로그인하지 않은 사용자로부터의 무단 액세스로부터 보호
