@@ -18,6 +18,7 @@ function reducer(state, action) {
   }
 }
 
+// ※ 실제 개발 상황에서 아래와 같은 계정 정보 명시는 절.대. 이루어져서는 안된다!
 const FAKE_USER = {
   name: 'Jack',
   email: 'jack@example.com',
@@ -50,6 +51,7 @@ function useAuth() {
   const context = useContext(AuthContext);
   if (!context === undefined)
     throw new Error('AuthContext was used outside AuthProvider');
+  return context;
 }
 
 export { AuthProvider, useAuth };

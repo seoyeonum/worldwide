@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  text-align: left;
 
   /* Different from other form */
   width: 48rem;
